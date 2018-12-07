@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>test</h1>
+	<table>
+		<tr th:each="list : ${memberList}">
+			<td th:text="${list.memberNo}">memberNo</td>
+			<td th:text="${list.memberId}">memberId</td>
+			<td th:text="${list.memberPw}">memberPw</td>
+			<td th:text="${list.memberName}">memberName</td>
+			<td th:text="${list.memberPhone}">memberPhone</td>
+			<td th:text="${list.memberEmail}">memberEmail</td>
+			<td th:text="${list.memberAddress}">memberAddress</td>
+		</tr>
+	</table>
+</body>
+</html>
